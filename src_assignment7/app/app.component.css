@@ -1,0 +1,9 @@
+/*
+to Give colour to textfield
+*/
+
+input[type=text]{
+    background-color: blue
+
+
+}
