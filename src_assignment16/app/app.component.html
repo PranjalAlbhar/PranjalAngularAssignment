@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+ 
+</div>
+
+<!--  on button click data is send from parent component to child component-->
+<button (click)="parentToChild()">SendToParent</button>
+
+<app-subcomponent [ParentData]="data" ></app-subcomponent> 
+
+ 
+<!-- on button click parent receives data from child-->
+  <app-subcomponent (childEvent)="mydata=$event"></app-subcomponent> 
+ <h1>{{mydata}}</h1> 
+
+
